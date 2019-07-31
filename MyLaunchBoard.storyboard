@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="YcI-33-yYJ">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="DJw-oB-hc4">
+            <objects>
+                <viewController id="YcI-33-yYJ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="f2E-Bi-Iex">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nVM-iZ-8As">
+                                <rect key="frame" x="23" y="104" width="368" height="673"/>
+                                <color key="backgroundColor" red="0.52590394139168417" green="1" blue="0.77797131914908513" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="这是启动图" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h2G-OH-hYR">
+                                <rect key="frame" x="193.5" y="307.5" width="27" height="281"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="27" id="L7a-SN-Vqm"/>
+                                    <constraint firstAttribute="height" constant="281" id="cOe-G3-Peb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="23"/>
+                                <color key="textColor" red="1" green="0.26498703090729869" blue="0.67138537062789305" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="displayP3"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="nVM-iZ-8As" firstAttribute="leading" secondItem="ZJB-fW-5Il" secondAttribute="leading" constant="23" id="3YL-li-cGD"/>
+                            <constraint firstItem="h2G-OH-hYR" firstAttribute="centerX" secondItem="f2E-Bi-Iex" secondAttribute="centerX" id="4C1-v3-yTW"/>
+                            <constraint firstItem="h2G-OH-hYR" firstAttribute="centerY" secondItem="f2E-Bi-Iex" secondAttribute="centerY" id="8cC-77-SWw"/>
+                            <constraint firstItem="nVM-iZ-8As" firstAttribute="top" secondItem="ZJB-fW-5Il" secondAttribute="top" constant="60" id="GgT-5t-WPu"/>
+                            <constraint firstItem="nVM-iZ-8As" firstAttribute="centerX" secondItem="f2E-Bi-Iex" secondAttribute="centerX" id="ROj-26-jiY"/>
+                            <constraint firstItem="ZJB-fW-5Il" firstAttribute="bottom" secondItem="nVM-iZ-8As" secondAttribute="bottom" constant="85" id="VI2-4S-h32"/>
+                            <constraint firstItem="ZJB-fW-5Il" firstAttribute="trailing" secondItem="nVM-iZ-8As" secondAttribute="trailing" constant="23" id="fDV-5s-qTc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ZJB-fW-5Il"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B46-zR-Ca0" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="155.07246376811597" y="129.91071428571428"/>
+        </scene>
+    </scenes>
+</document>
