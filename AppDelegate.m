@@ -30,13 +30,14 @@
     
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    
-//    [self setupLogin];
-    
     [self setupRootViewControllers];
     [self.window setRootViewController:self.rootNavigationController];
     
     [self.window makeKeyAndVisible];
+    
+    //先跳登录再跳首页
+//    LoginController *loginVC = [[LoginController alloc] init];
+//    [self.rootNavigationController presentViewController:loginVC animated:NO completion:nil];
     
     return YES;
 }
@@ -68,10 +69,6 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
-- (void)setupLogin {
-    [self.window setRootViewController:[[LoginController alloc] init]];
-}
-
 - (void)setupRootViewControllers {
     MyHomeController *homeViewController = [MyHomeController new];
     RTContainerNavigationController *homeViewControllerNav =
@@ -91,23 +88,6 @@
     self.rootNavigationController = [[RTRootNavigationController alloc] initWithRootViewControllerNoWrapping:self.tabbarController];
     [self.rootNavigationController setNavigationBarHidden:YES];
     [self customizeTabBarForController:tabBarController];
-    
-#pragma mark - 登录跳Tabbar
-//        CATransition *transtition = [CATransition animation];
-//        transtition.duration = 0.5;
-//        transtition.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-//        [UIApplication sharedApplication].keyWindow.rootViewController = self.rootNavigationController;
-//        [[UIApplication sharedApplication].keyWindow.layer addAnimation:transtition forKey:@"animation"];
-//    self = (AppDelegate *)[UIApplication sharedApplication].delegate;
-//    [[UIApplication sharedApplication].keyWindow setRootViewController:self.rootNavigationController];
-//    self.window = [UIApplication sharedApplication].keyWindow;
-//    [self.window setRootViewController:self.rootNavigationController];
-}
-
-- (void)selectIndexTabbar {
-    NSLog(@"---%@",self);
-    self.window = [UIApplication sharedApplication].keyWindow;
-    [(MyTabBarController *)self.window.rootViewController.tabBarController setSelectedIndex:1];
 }
 
 - (void)customizeTabBarForController:(MyTabBarController *)tabBarController {

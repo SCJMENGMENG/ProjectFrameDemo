@@ -19,15 +19,6 @@ static BOOL isLogin = NO;
 
 @implementation MyHomeController
 
-#pragma mark - 先到首页再跳登录页
-//- (void)viewWillAppear:(BOOL)animated {
-//    if (!isLogin) {
-//        isLogin = YES;
-//        LoginController *loginVC = [[LoginController alloc] init];
-//        [self.rt_navigationController pushViewController:loginVC animated:YES];
-//    }
-//}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.

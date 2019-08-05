@@ -34,7 +34,7 @@
 
 - (void)aaa {
     
-    [[[AppDelegate alloc] init] setupRootViewControllers];
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 
 @end

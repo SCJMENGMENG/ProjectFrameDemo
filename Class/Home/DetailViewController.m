@@ -55,9 +55,6 @@
     __weak __typeof(&*self)weakSelf = self;
     [self.rt_navigationController popToRootViewControllerAnimated:NO complete:^(BOOL finished) {
         [UIViewController.rootTabBarController setSelectedIndex:1];
-//        NSLog(@"%@",self);
-//        [[(AppDelegate *)[UIApplication sharedApplication].delegate tabbarController] setSelectedIndex:1];
-//        [[[AppDelegate alloc] init] selectIndexTabbar];
     }];
 }
 

@@ -16,9 +16,5 @@
 @property (nonatomic, strong) MyTabBarController *tabbarController;
 @property (nonatomic, strong) RTRootNavigationController *rootNavigationController;
 
-- (void)setupRootViewControllers;
-
-- (void)selectIndexTabbar;
-
 @end
 
